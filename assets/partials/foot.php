@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="/assets/js/jquery.js"%3E%3C/script%3E'))</script>
 <script src="/assets/js/scripts.foot.min.js"></script>
 <!--[if (lt IE 9) & (!IEMobile)]>
