@@ -11,6 +11,10 @@
   <!--[if IE]><![endif]-->
   <meta charset="utf-8">
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="imagetoolbar" content="false">
+  <meta http-equiv="cleartype" content="on">
+
   <title><?php echo $pageTitle; ?></title>
 
   <meta name="description" content="Page Description Goes Here">
@@ -23,16 +27,12 @@
 
   <meta property="og:title" content="Page Title Repeated Here">
   <meta property="og:description" content="Page Description Repeated Here">
-  <meta property="og:image" content="/assets/img/fav/facebook.png">
+  <meta property="og:image" content="/assets/img/fav/open-graph.png">
   <meta property="og:url" content="<?php echo $siteUrl; ?>">
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta http-equiv="imagetoolbar" content="false">
-  <meta http-equiv="cleartype" content="on">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link type="text/css" rel="stylesheet" href="/assets/css/style.css">
 
@@ -60,3 +60,5 @@
 </head>
 
 <body id="<?php echo $bodyId; ?>">
+
+<!--[if lt IE 8]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
