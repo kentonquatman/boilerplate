@@ -1,4 +1,4 @@
-boilerplate
+Boilerplate
 ===========
 
 Front-end templates
