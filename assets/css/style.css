@@ -1,0 +1,250 @@
+/* ******************************************************************************  Compass Setup  First, let's include our Compass mixins. Add or remove as needed. See http://compass-style.org for compass documentation.  The first include is a file where we can override any of the Compass defaults we would like to change on a project wide basis.  ***************************************************************************** */
+/* 3d Transform Defaults */
+/* Transition Defaults */
+/* Color Contrast Defaults */
+/* ******************************************************************************  Project Helpers  Sass helper files (variables, mixins, functions, etc.)  ***************************************************************************** */
+/* ******************************************************************************  Convert Pixels to Ems  Use this in media queries to properly convert the breakpoint to an em. http://blog.55minutes.com/2012/04/media-queries-and-browser-zoom/  ***************************************************************************** */
+/* ******************************************************************************  Font Stacks  ***************************************************************************** */
+/* ******************************************************************************  Font Usage  ***************************************************************************** */
+/* ******************************************************************************  Colors  By Color Name  ***************************************************************************** */
+/* ******************************************************************************  Colors  By Usage Name, reference the color variables above, use the variables below in the actual SASS partials throughout the site.  ***************************************************************************** */
+/* ******************************************************************************  Site specific variables  ***************************************************************************** */
+/* ******************************************************************************  Font Stacks  We should set up our font stacks in the variables file. Then, when we want to set our font on a selector we call the family, weight and style in the mixin.  ***************************************************************************** */
+/* ******************************************************************************  Font Sizing  Let's make it easy to use rem measuerments in our website for type sizes.  ***************************************************************************** */
+/* ******************************************************************************  Retina Images  Smart delivery of 2x images for those cases where svg just won't work. http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss  ***************************************************************************** */
+/* ******************************************************************************  Break Points  ***************************************************************************** */
+/* ******************************************************************************  CSS Triangles - http://minimalmonkey.com/sass-triangle-mixin/  @param width           :  px, em @param height          :  px, em @param direction       :  up, down, left, right @param color           :  hex, rgb  ***************************************************************************** */
+/* ******************************************************************************  Buttons  This is a standard wireframe button. This mixin should not make it to live, designed sites. Do take note of how we use contrast color to base the text color off of the background.  ***************************************************************************** */
+/* ******************************************************************************  Text Utilities  Easy addition of text-overflow ellipsis or word-wrap properties. Don't use, @include ellipsis/word-wrap. Rather, use @extend %ellipsis/%word-wrap as this will get all of the items using this on the same selector.  ***************************************************************************** */
+/* ******************************************************************************  Embossed/Letterpressed box  Don't use, @include box-emboss. Rather, use @extend %box-emboss as this will get all of the items using this on the same selector.  ***************************************************************************** */
+/* ******************************************************************************  CSS Animations  Set up @include keyframes(name-of-keyframes) ourside of a selector context. This will allow us to use the keyframes in animation. Should do this early on in the sass stack. Then we use the animation mixin in the selector we need to animate, calling in the (name, duration, transition-direction, repeat, etc.) See "Animation Mixin" here: http://css-tricks.com/custom-user-mixins/  ***************************************************************************** */
+/* ******************************************************************************  Site specific mixins  Every site is a beautiful and unique snowflake. Create your beautiful and unique mixins here.  ***************************************************************************** */
+/* ******************************************************************************  Extend placeholder classes  Sass let's us use @extend [selector] to highlight chunks of our file that all share css with the same selector. By using @extend, it gathers these all up on output and places them in a single, shared selector, keeping filesize down. The benefit over using a mixin is that the mixin results are only added to the css file once with multiple selectors, instead of repeated for all the selectors.  In this file, we can create "fake" selectors that won't parse on their own, but give us a hook to extend further selectors down the chain.  ***************************************************************************** */
+/* line 24, ../sass/01helpers/extends.scss */
+input[type='text'], input[type='email'], input[type='search'], input[type='tel'], input[type='url'], input[type='password'], textarea { -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, rgba(0, 0, 0, 0.6) 0 1px 0 inset; -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, rgba(0, 0, 0, 0.6) 0 1px 0 inset; box-shadow: rgba(255, 255, 255, 0.3) 0 1px 0, rgba(0, 0, 0, 0.6) 0 1px 0 inset; }
+
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, ul li, ol li, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/*- Other items we want to include in a reset that aren't included in Compass' default reset.
+----------------------------------------------------------------------*/
+/* line 7, ../sass/01helpers/reset-addons.scss */
+audio:not([controls]) { display: none; }
+
+/* line 8, ../sass/01helpers/reset-addons.scss */
+[hidden] { display: none; }
+
+/* line 9, ../sass/01helpers/reset-addons.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 11, ../sass/01helpers/reset-addons.scss */
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+/* line 12, ../sass/01helpers/reset-addons.scss */
+address, caption, cite, code, dfn, th, var { font-style: normal; font-weight: normal; }
+
+/* line 13, ../sass/01helpers/reset-addons.scss */
+a { font-size: 100%; vertical-align: baseline; background: transparent; }
+
+/* line 14, ../sass/01helpers/reset-addons.scss */
+a:hover, a:active { outline: none; }
+
+/* line 15, ../sass/01helpers/reset-addons.scss */
+img, object, embed { max-width: 100%; height: auto !important; border: 0; }
+/* line 15, ../sass/01helpers/reset-addons.scss */
+.ie8 img, .ie8 object, .ie8 embed { width: auto; }
+
+/* line 16, ../sass/01helpers/reset-addons.scss */
+svg:not(:root) { overflow: hidden; }
+
+/* line 18, ../sass/01helpers/reset-addons.scss */
+ins { color: black; text-decoration: none; }
+
+/* line 19, ../sass/01helpers/reset-addons.scss */
+mark { color: black; }
+
+/* line 20, ../sass/01helpers/reset-addons.scss */
+del { text-decoration: line-through; }
+
+/* line 21, ../sass/01helpers/reset-addons.scss */
+abbr { cursor: help; }
+
+/* line 22, ../sass/01helpers/reset-addons.scss */
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+/* line 23, ../sass/01helpers/reset-addons.scss */
+table { font-size: inherit; font: 100%; }
+
+/* line 24, ../sass/01helpers/reset-addons.scss */
+th { font-weight: bold; vertical-align: bottom; }
+
+/* line 25, ../sass/01helpers/reset-addons.scss */
+td, td img { vertical-align: top; }
+
+/* line 26, ../sass/01helpers/reset-addons.scss */
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #666666; margin: 1em 0; padding: 0; }
+
+/* line 27, ../sass/01helpers/reset-addons.scss */
+input, select { vertical-align: middle; }
+
+/* line 29, ../sass/01helpers/reset-addons.scss */
+em, i { font-style: italic; }
+
+/* line 30, ../sass/01helpers/reset-addons.scss */
+strong, b { font-weight: bold; }
+
+/* line 31, ../sass/01helpers/reset-addons.scss */
+em > strong, strong > em { font-weight: bold; font-style: italic; }
+
+/* line 33, ../sass/01helpers/reset-addons.scss */
+small { font-size: .85em; }
+
+/* line 34, ../sass/01helpers/reset-addons.scss */
+sub, sup { font-size: .75em; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 35, ../sass/01helpers/reset-addons.scss */
+sup { top: -0.5em; }
+
+/* line 36, ../sass/01helpers/reset-addons.scss */
+sub { bottom: -0.25em; }
+
+/* line 38, ../sass/01helpers/reset-addons.scss */
+pre { white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 2.1 */ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ word-wrap: break-word; /* IE */ }
+
+/* line 39, ../sass/01helpers/reset-addons.scss */
+pre, code, kbd, samp { font-family: "courier new", monospace, serif; font-size: 1em; }
+
+/* line 40, ../sass/01helpers/reset-addons.scss */
+textarea { overflow: auto; }
+
+/* line 41, ../sass/01helpers/reset-addons.scss */
+.clickable, label, input[type='button'], input[type='submit'], button, input[type='submit'], a { cursor: pointer; }
+
+/* line 42, ../sass/01helpers/reset-addons.scss */
+input[type="radio"] { vertical-align: text-bottom; }
+
+/* line 43, ../sass/01helpers/reset-addons.scss */
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+
+/* line 44, ../sass/01helpers/reset-addons.scss */
+select, input, textarea { font: 99% sans-serif; }
+
+/* line 45, ../sass/01helpers/reset-addons.scss */
+button, input[type='submit'] { width: auto; overflow: visible; }
+
+/* line 46, ../sass/01helpers/reset-addons.scss */
+button, input[type='submit'], input, select, textarea { margin: 0; }
+
+/* line 47, ../sass/01helpers/reset-addons.scss */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/* line 48, ../sass/01helpers/reset-addons.scss */
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+/* line 50, ../sass/01helpers/reset-addons.scss */
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*- CLEAR FIX If you don't want to apply a group class to the HTML element you can always use "@extend .group;" on it unless it's inside a media query.
+----------------------------------------------------------------------*/
+/* line 57, ../sass/01helpers/reset-addons.scss */
+.group { zoom: 1; /* For IE 7 (trigger hasLayout) */ }
+/* line 60, ../sass/01helpers/reset-addons.scss */
+.group:before, .group:after { display: table; visibility: hidden; content: ""; }
+/* line 65, ../sass/01helpers/reset-addons.scss */
+.group:after { clear: both; }
+
+/* ******************************************************************************  Project Base  Base layout and typography files  ***************************************************************************** */
+/*-  VANITY STYLES
+----------------------------------------------------------------------*/
+/* line 4, ../sass/02base/general.scss */
+::selection { background: rgba(170, 170, 170, 0.5); text-shadow: none; color: black; }
+
+/* line 5, ../sass/02base/general.scss */
+::-moz-selection { background: rgba(170, 170, 170, 0.5); text-shadow: none; color: black; }
+
+/* line 6, ../sass/02base/general.scss */
+img::selection { background: transparent; }
+
+/* line 7, ../sass/02base/general.scss */
+img::-moz-selection { background: transparent; }
+
+@media only screen and (max-device-width: 480px) { /* line 10, ../sass/02base/general.scss */
+  html { -webkit-text-size-adjust: none; }
+  /* line 11, ../sass/02base/general.scss */
+  a:link { -webkit-tap-highlight-color: rgba(170, 170, 170, 0.5); } }
+/*-  BASE SITE STYLES
+----------------------------------------------------------------------*/
+/* line 17, ../sass/02base/general.scss */
+html { font-size: 62.5%; }
+
+/* line 21, ../sass/02base/general.scss */
+body { font-family: "Helvetica Neue", Helmet, Freesans, sans-serif; font-style: normal; font-weight: 400; line-height: 1.3; background-color: white; }
+
+/* line 27, ../sass/02base/general.scss */
+body, select, input, textarea { color: black; }
+
+/*- BASE Layout - We use Susy for our grids. http://susy.oddbird.net.  @include container(min-width cols max-width) define this item as a container. all variables are optional  @include span-columns($columns omega,$total-columns,$padding) set the column width of the item and if it's the last, omega flips float total columns can override the variable below and padding applies padding on the column item  @include nth-omega($n) replace with an nth-child formulas to add omega as an override to repeating elements  @include at-breakpoint(min-width cols max-width) { @content } redefine the container media layout for a given breakpoint  @include with-grid-settings($columns, $width, $gutter, $padding) { @content } this will override the default settings in specific cases  @include prefix($columns) padding - add this many columns of space before column  @include suffix($columns) padding - add this many columns of space before column  @include pad($before, $after) padding - adds both prefix and suffix columns  @include bleed($before, $after) padding - pad in reverse, adds negative margins to have this column bleed out of grid  @include pre($columns) margin - add columns of empty space before the column  @include post($columns) margin - add columns of empty space after the column  @include squish($before, after) margin - adds both pre and post columns  @include push($columns) margin - same as pre  @include pull($columns) margin - negative margins before hand to pull it (half of bleed)  ----------------------------------------------------------------------*/
+/* ******************************************************************************  Default type styles  ***************************************************************************** */
+/* line 10, ../sass/02base/type.scss */
+h1, h2, h3 { font-family: "Helvetica Neue", Helmet, Freesans, sans-serif; font-style: normal; font-weight: 700; }
+
+/* line 14, ../sass/02base/type.scss */
+h1 { font-size: 32px; font-size: 3.2rem; }
+
+/* line 18, ../sass/02base/type.scss */
+h2 { font-size: 24px; font-size: 2.4rem; }
+
+/* line 22, ../sass/02base/type.scss */
+h3 { font-size: 18px; font-size: 1.8rem; }
+
+/* line 44, ../sass/02base/type.scss */
+p, ul li, ol li { font-size: 14px; font-size: 1.4rem; margin: 0 0 1em; }
+
+/* line 49, ../sass/02base/type.scss */
+ol { list-style-type: decimal; }
+
+/* line 55, ../sass/02base/type.scss */
+ul { list-style-type: square; }
+
+/* line 61, ../sass/02base/type.scss */
+ul, ol { margin: 1em 0 1em 1.75em; }
+/* line 63, ../sass/02base/type.scss */
+ul li, ol li { margin-bottom: 0.3em; }
+/* line 67, ../sass/02base/type.scss */
+nav ul, nav ol { list-style-type: none; margin: 0; }
+
+/* line 74, ../sass/02base/type.scss */
+blockquote p, blockquote ul li, ul blockquote li, blockquote ol li, ol blockquote li { font-size: 1em; margin: 0; }
+
+/* ******************************************************************************  Project components  Buttons, forms, alerts, lists, nav, tables, etc. Anything that is a single component used throughout the site.  ***************************************************************************** */
+/* line 7, ../sass/03components/forms.scss */
+input[type='text'], input[type='email'], input[type='search'], input[type='tel'], input[type='url'], input[type='password'], textarea { -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+
+/* line 40, ../sass/03components/forms.scss */
+label { display: block; margin: 1em 0.5em; }
+
+/* ******************************************************************************  Project Modules  Sections that make up the site. Header, footer, sidebar, nav, etc.  ***************************************************************************** */
+/* ******************************************************************************  Project specific files  Now's the time to starty building the site. The sass folder should structured  Our goal is to load up to three stylesheets on every page. reset.css, style.css and finally a name-spaced css file depending on the site section we're in, containing section specific code, such as blog.css, podcast.css, etc.  No style rules should be built here. They should all be broken out into specific SASS partials.  ***************************************************************************** */
