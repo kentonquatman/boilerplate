@@ -16,7 +16,10 @@ a {
 **************************************************/
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+  font-family: $headline-font;
   font-weight: bold;
+  margin: 1em 0;
 }
 
 h1 {
@@ -67,18 +70,22 @@ blockquote {
   }
 }
 
-small {}
+address {
+  @extend %base-type;
+}
+
+small {
+  @include font-size(11);
+}
+
+time {}
 mark {}
 b, strong {}
 i, em {}
 ins, u {}
 del, s {}
 abbr {}
-sup, sub {}
 sup {}
 sub {}
-time {}
-address {}
-code, pre {}
 code {}
 pre {}

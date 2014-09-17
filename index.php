@@ -1,5 +1,4 @@
 <?php
-  include '_partials/site-variables.php';
   $pageTitle = 'Site Name';
   $bodyId = 'home';
   include '_partials/head.php';

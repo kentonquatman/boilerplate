@@ -1,8 +1,14 @@
 /**************************************************
+ VARIABLES
+**************************************************/
+
+@import "00variables/compass-variables";
+@import "00variables/site-variables";
+
+/**************************************************
  COMPASS
 **************************************************/
 
-@import "01helpers/compass-variables";
 @import "compass/css3";
 @import "compass/typography";
 @import "compass/layout/stretching";
@@ -15,10 +21,9 @@
  HELPERS
 **************************************************/
 
-@import "01helpers/variables";
-@import "01helpers/reset";
 @import "01helpers/functions";
 @import "01helpers/mixins";
+@import "01helpers/reset";
 @import "01helpers/extends";
 
 /**************************************************
@@ -41,8 +46,9 @@
  MODULES
 **************************************************/
 
-@import "04modules/footer";
 @import "04modules/header";
+@import "04modules/navigation";
+@import "04modules/footer";
 
 /**************************************************
  SECTIONS

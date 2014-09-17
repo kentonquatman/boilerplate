@@ -13,7 +13,7 @@ $default-box-direction: normal;
 $default-box-lines: single;
 $default-box-pack: start;
 
-$default-box-shadow-color: #333;
+$default-box-shadow-color: transparentize(#000, .5);
 $default-box-shadow-h-offset: 0px;
 $default-box-shadow-v-offset: 0px;
 $default-box-shadow-blur: 5px;

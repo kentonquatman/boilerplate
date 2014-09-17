@@ -22,11 +22,6 @@ html {
 
 body {
   background-color: $body-bg;
-}
-
-body, 
-select, 
-input, 
-textarea {
   color: $body-text;
+  font-family: $body-font;
 }
