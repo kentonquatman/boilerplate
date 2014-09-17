@@ -10,11 +10,16 @@ javascripts_dir = "_assets/js"
 fonts_dir = "_assets/fonts"
 
 output_style = :compressed
+environment = :production
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
-line_comments = false
 color_output = false
 
-preferred_syntax = :scss
+
+# If you prefer the indented syntax, you might want to regenerate this
+# project again passing --syntax sass, or you can uncomment this:
+# preferred_syntax = :sass
+# and then run:
+# sass-convert -R --from scss --to sass _assets/sass scss && rm -rf sass && mv scss sass

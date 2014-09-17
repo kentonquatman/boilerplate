@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_assets\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_assets\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_assets\/fav\/apple-touch-icon-114x114-precomposed.png": {
 		"fileType": 32768,
 		"ignore": 0,
