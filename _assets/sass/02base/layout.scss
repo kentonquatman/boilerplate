@@ -1,0 +1,23 @@
+/**************************************************
+ LAYOUT STYLES
+**************************************************/
+
+%site-column {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%major-column {
+  @include break-up($medium){
+    @include float;
+    width: 70%;
+  }
+}
+
+%minor-column {
+  @include break-up($medium){
+    @include float(right);
+    width: 25%;
+  }
+}

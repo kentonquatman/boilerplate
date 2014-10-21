@@ -1,0 +1,64 @@
+/**************************************************
+ FONT STACKS
+**************************************************/
+
+$sans-serif: "Helvetica Neue", Helmet, Freesans, sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+$monospace: "courier new", monospace, serif;
+
+/**************************************************
+ FONT USAGE
+**************************************************/
+
+$body-font: $sans-serif;
+$headline-font: $sans-serif;
+$button-font: $sans-serif;
+$code-font: $monospace;
+
+/**************************************************
+ COLOR PALETTE
+**************************************************/
+
+$black: #1a1a1a;
+$dk-gray: #404040;
+$gray: #808080;
+$lt-gray: #bfbfbf;
+$white: #fff;
+
+/**************************************************
+ COLOR USAGE
+**************************************************/
+
+/* Base Colors */
+
+$selection-bg: transparentize($dk-gray, 0.5);
+$selection-text: $white;
+
+$body-bg: $white;
+$body-text: $black;
+
+$border-color: $dk-gray;
+
+/* Link Colors */
+
+$link-color: $gray;
+$link-hover: $dk-gray;
+
+$button-text: $white;
+$button-bg: $black;
+
+/**************************************************
+ UNICODE CHARACTERS
+**************************************************/
+
+$vertical-bar: "\007C";
+$bullet: "\2022";
+$triangle-down: "\25BC";
+$triangle-up: "\25B2";
+
+/**************************************************
+ SITE SPECIFIC
+**************************************************/
+
+$base-size: 10;
+$side-padding: 5%;

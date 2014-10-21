@@ -1,0 +1,91 @@
+/**************************************************
+ DEFAULT LINK STYLES
+**************************************************/
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  &:hover, 
+  &:focus {
+    color: $link-hover;
+  }
+}
+
+/**************************************************
+ DEFAULT TYPE STYLES
+**************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+  font-family: $headline-font;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+h1 {
+  @include font-size(36);
+}
+
+h2 {
+  @include font-size(30);
+}
+
+h3 {
+  @include font-size(24);
+}
+
+h4 {
+  @include font-size(18);
+}
+
+h5, h6 {
+  @include font-size(16);
+}
+
+%base-type {
+  @include font-size(14);
+  line-height: 1.4;
+}
+
+p {
+  @extend %base-type;
+  margin: 1em 0;
+}
+
+ol { list-style-type: decimal; }
+ul { list-style-type: square; }
+
+ul, ol {
+  margin: 1em 0 1em 1.75em;
+  li {
+    @extend %base-type;
+    margin-bottom: 0.25em;
+  }
+}
+
+blockquote {
+  p {
+    font-size: 1em;
+    margin: 0;
+  }
+}
+
+address {
+  @extend %base-type;
+}
+
+small {
+  @include font-size(11);
+}
+
+time {}
+mark {}
+b, strong {}
+i, em {}
+ins, u {}
+del, s {}
+abbr {}
+sup {}
+sub {}
+code {}
+pre {}
