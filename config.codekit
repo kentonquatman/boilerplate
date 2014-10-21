@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "17625",
+"creatorBuild": "17756",
 "files": {
 	"\/assets\/css\/01helpers\/compass-variables.css": {
 		"fileType": 16,
@@ -283,17 +283,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/fav\/facebook.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 100,
-		"inputAbbreviatedPath": "\/assets\/fav\/facebook.png",
-		"outputAbbreviatedPath": "\/assets\/fav\/facebook.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/fav\/favicon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -301,6 +290,17 @@
 		"initialSize": 84,
 		"inputAbbreviatedPath": "\/assets\/fav\/favicon.png",
 		"outputAbbreviatedPath": "\/assets\/fav\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/fav\/open-graph.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100,
+		"inputAbbreviatedPath": "\/assets\/fav\/open-graph.png",
+		"outputAbbreviatedPath": "\/assets\/fav\/open-graph.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -969,6 +969,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"space_operators": {
 			"active": 0,
 			"flagValue": -1
@@ -1444,6 +1448,7 @@
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
+	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,
