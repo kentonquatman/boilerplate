@@ -3,21 +3,21 @@
 **************************************************/
 
 %site-column {
-  max-width: 1080px;
+  max-width: #{1080/16.0}em;
   margin-left: auto;
   margin-right: auto;
 }
 
 %major-column {
   @include break-up($medium){
-    @include float;
+    float: left;
     width: 70%;
   }
 }
 
 %minor-column {
   @include break-up($medium){
-    @include float(right);
+    float: right;
     width: 25%;
   }
 }

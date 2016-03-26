@@ -1,27 +1,8 @@
 /**************************************************
- VARIABLES
-**************************************************/
-
-@import "00variables/compass-variables";
-@import "00variables/site-variables";
-
-/**************************************************
- COMPASS
-**************************************************/
-
-@import "compass/css3";
-@import "compass/typography";
-@import "compass/layout/stretching";
-@import "compass/utilities/color";
-@import "compass/utilities/general/float";
-@import "compass/utilities/general/min";
-@import "compass/utilities/general/reset";
-
-/**************************************************
  HELPERS
 **************************************************/
 
-@import "01helpers/functions";
+@import "01helpers/variables";
 @import "01helpers/mixins";
 @import "01helpers/reset";
 @import "01helpers/extends";

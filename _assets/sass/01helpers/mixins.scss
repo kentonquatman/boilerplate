@@ -9,12 +9,12 @@ $large:    900;
 $x-large:  1080;
 $xx-large: 1260;
 
-@mixin break-up($point) {
-  @media screen and (min-width: pem($point)) { @content; }
+@mixin break-up($point){
+  @media screen and (min-width: #{$point/16.0}em){ @content }
 }
 
-@mixin break-down($point) {
-  @media screen and (max-width: pem($point - 1)) { @content; }
+@mixin break-down($point){
+  @media screen and (max-width: #{$point/16.0}em){ @content }
 }
 
 /**************************************************
@@ -31,15 +31,14 @@ $xx-large: 1260;
 **************************************************/
 
 @mixin button($bg-color, $font-size: 18) {
-  @include border-radius(.5em);
   @include font-size($font-size);
   display: block;
   padding: .5em;
   background-color: $bg-color;
+  border-radius: .5em;
   color: $button-text;
   font-family: $button-font;
-  &:hover, 
-  &:focus {
+  &:hover,&:focus {
     background-color: lighten($bg-color, 10%);
   }
 }
@@ -69,24 +68,4 @@ $xx-large: 1260;
   background-position: 0 0;
   background-repeat: no-repeat;
   @include image-2x($sm-image, $lg-image);
-}
-
-/**************************************************
- CSS ANIMATIONS
-**************************************************/
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} { @content }
-  @-moz-keyframes #{$name} { @content }
-  @-ms-keyframes #{$name} { @content }
-  @-o-keyframes #{$name} { @content }
-  @keyframes #{$name} { @content}
-}
-
-@mixin animation($value) {
-  -webkit-animation: $value;
-  -moz-animation: $value;
-  -ms-animation: $value;
-  -o-animation: $value;
-  animation: $value;
 }

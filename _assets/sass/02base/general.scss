@@ -16,9 +16,7 @@ img::-moz-selection { background: transparent; }
  BASE STYLES
 **************************************************/
 
-html {
-  font-size: percentage($base-size/16);
-}
+html { font-size: percentage($base-size/16) }
 
 body {
   background-color: $body-bg;
